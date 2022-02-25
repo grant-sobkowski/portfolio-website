@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.6aca1640.css",
-    "main.js": "/portfolio-website/static/js/main.30fad559.js",
+    "main.js": "/portfolio-website/static/js/main.6cf923d4.js",
     "static/js/787.30237536.chunk.js": "/portfolio-website/static/js/787.30237536.chunk.js",
     "static/media/climateflight-picture.jpg": "/portfolio-website/static/media/climateflight-picture.439eac6c6d713080c0ed.jpg",
     "static/media/antgame-gamescreen-cropped.png": "/portfolio-website/static/media/antgame-gamescreen-cropped.f37a6747baf914003f19.png",
     "static/media/cropped_headshot.jpg": "/portfolio-website/static/media/cropped_headshot.7114ca37722c19e816c8.jpg",
-    "static/media/logo.svg": "/portfolio-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio-website/index.html",
     "main.6aca1640.css.map": "/portfolio-website/static/css/main.6aca1640.css.map",
-    "main.30fad559.js.map": "/portfolio-website/static/js/main.30fad559.js.map",
+    "main.6cf923d4.js.map": "/portfolio-website/static/js/main.6cf923d4.js.map",
     "787.30237536.chunk.js.map": "/portfolio-website/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6aca1640.css",
-    "static/js/main.30fad559.js"
+    "static/js/main.6cf923d4.js"
   ]
 }
