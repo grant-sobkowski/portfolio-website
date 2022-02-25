@@ -1,38 +1,271 @@
 .App {
+    min-width: 900px;
 }
 .section{
-    height: 30vw;
+    height: fit-content;
+    min-height: 900px;
     // outline: 1px solid rgba(0, 0, 0, 0.667);
-    padding: 120px 0 80px;
-    background: #fffa;
+    padding: none;
+    background-color: #07192f;
     position: relative;
     overflow: hidden;
 
-    &:nth-child(2n) {
-        background: #eee;
-
-        &:after{
-            transform: rotate(-1deg);
-            transform-origin: 0 0;
-            background: #fffa;
-        }
-    }
-    &:after {
-        content: "";
-        position: absolute;
-        width: 110%;
-        height: 50%;
-        top: 100%;
-        transform: rotate(2deg);
-        transform-origin: 100% 100%;
-        background: #eee;
-    }
+    // &:nth-child(2n) {
+    //     background: #eee;
+    // }
+}
+.portfolio{
+    padding-top: 40px;
 }
 .sub-heading{
     margin: 5px 0;
     text-align: center;
-    color: #222;
+    color: #fff;
     font-size: 50px;
     font-weight: 400;
     height: min-content;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 5vh;
+}
+.sub-heading-portfolio{
+    font-family: 'Oswalt', sans-serif;
+    display: block;
+    margin-top: 20px;
+}
+.sub-heading-what{
+
+}
+.body-text{
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+.intro-title{
+    display: block;
+    font-size: 4em;
+    margin-top: 35vh;
+    height:fit-content;
+    margin-bottom: 10px;
+    padding-bottom: none;
+    color: #fff;
+    width:fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+.intro-occupation{
+    font-size: 24px;
+    display: block;
+    font-family: 'Ubuntu';
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color:rgba(24, 253, 165, 0.8);
+}
+.what-slogan {
+    font-size: 32px;
+    color: #fff;
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.about-me{
+    max-width: 580px;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.headshot{
+    max-width: 280px;
+    max-height: 280px;
+    width: 30vw;
+    height: 30vw;
+    background-image: url("../public/cropped_headshot.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 256px;
+    margin: 0px 10px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.what-skills{
+    margin-top: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill{
+    width: 150px;
+    height: 150px;
+    background-color:#000;
+    display: inline-block;
+    border-radius: 76px;
+    &.webdev{
+        background-image: url(../public/webdev-icon-cropped.png);
+        background-size: contain;
+        background-position: center;
+        margin-left:100px;
+        margin-right: 50px;
+    }
+    &.ui-design{
+        background-image: url(../public/ux-icon.png);
+        background-size: contain;
+        background-position: center;
+        margin-left: 50px;
+        margin-right:100px;
+    }
+}
+.container{
+    width:auto;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    &.what-container{
+        margin-top: 60px;
+        margin-bottom: 200px;
+        display: block;
+    }
+}
+
+.divider{
+    margin-top:60px;
+    margin-bottom:60px;
+    display: block;
+    .div-one{
+        width:100%;
+        height: 3px;
+        background: linear-gradient(to right, #07192f 0%, rgba(255, 255, 255, 0.4) 50%, #07192f 100%);
+
+    }
+    .div-two{
+        margin-top: 15px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        background: linear-gradient(to right, #07192f 15%, rgba(255, 255, 255, 0.4) 50%,#07192f 85%);
+    }
+}
+.divider-white{
+    margin-top:160px;
+    margin-bottom: 60px;
+
+}
+.div-one-white{
+    width:100%;
+    height: 3px;
+    background: linear-gradient(to right, #fff 0%, rgba(124, 124, 124, 0.4) 50%, #fff 100%);
+}
+.div-two-white{
+    margin-top: 20px;
+    width:100%;
+    height: 3px;
+    background: linear-gradient(to right, #fff 15%, rgba(124, 124, 124, 0.4) 50%, #fff 85%)
+}
+
+
+.project{
+    max-width: 900px;
+    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    .project-title{
+        padding-bottom:30px;
+        font-size: 42px;
+        text-align: center;
+        width:100%;
+        color: #fff;
+        font-family: 'Lato', sans-serif;;
+    }
+    .project-picture{
+        height: 300px;
+        width:40%;
+
+    }
+    .antsim-picture{
+        border: 3px solid white;
+        float:left;
+        background-image: url(../public/antgame-gamescreen-cropped.png);
+        background-size: contain;
+        background-position: center;
+    }
+
+    .climateflight-picture{
+        border: 3px solid #07192f;
+        float:left;
+        background-image: url(../public/climateflight-picture.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .climateflight-body{
+        color: #07192f;
+    }
+    .climateflight-title{
+        margin-top: 60px;
+        color: #07192f;
+    }
+    .project-description{
+        font-size: 22px !important;
+        float: left;
+        padding: 0px 0px 0px 18px;
+        width:56%;
+        height: 300px;
+    }
+    .project-link-container{
+        padding-top:30px;
+        float:right;
+        width: 100%;
+        height: 72px;
+        .project-link{
+            font-family: 'Ubuntu', sans-serif;
+            font-size:20px;
+            color:#fff;
+            background-color: #07192f;
+            border: 5px solid white;
+            height:50px;
+            width: 200px;
+            display:block;
+            margin-left: auto;
+            margin-right:auto;
+            &:hover{
+                background-color: rgb(94, 94, 94);
+            }
+        }
+    }
+}
+.ant-simulation{
+    margin-top:100px;
+}
+.climateflight{
+    height: 700px;
+    padding-top: 30px;
+}
+.bottom-info{
+    height: 200px;
+}
+.bottom-email{
+    font-family: 'Ubuntu', sans-serif;
+    width: fit-content;
+    color:rgb(17, 224, 145);
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.copyright{
+    margin-top: 30px;
+    color: grey;
+    font-family: 'Ubuntu', sans-serif;
+    width: fit-content;
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
 }
